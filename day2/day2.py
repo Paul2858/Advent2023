@@ -2,7 +2,7 @@
 def getGameFromInput(textFile):
     with open(textFile) as f:
         lines = f.readlines()
-    # ID: {color: [x,y,z]}
+    # ID: {colour: [x,y,z]}
     game = {}
 
     for line in lines:
@@ -55,8 +55,9 @@ def solve2(textFile):
     return solution
 
 if __name__=="__main__":
-    testInput = "inputs/day2Test.txt"
-    input = "inputs/day2Input.txt"
+    testInput = "../inputs/day2/test.txt"
+    input = "../inputs/day2/input.txt"
+    
     assert solve1(testInput) == 8
     assert solve2(testInput) == 2286
     print(solve1(input))
