@@ -55,8 +55,8 @@ def solve2(textFile):
     return solution
 
 if __name__=="__main__":
-    testInput = "day2Test.txt"
-    input = "day2Input.txt"
+    testInput = "inputs/day2Test.txt"
+    input = "inputs/day2Input.txt"
     assert solve1(testInput) == 8
     assert solve2(testInput) == 2286
     print(solve1(input))
