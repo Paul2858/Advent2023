@@ -45,7 +45,7 @@ def solve1(textFile):
 def solve2(textFile):
     game = getGameFromInput(textFile)
     solution = 0
-    
+
     for id, draws in game.items():
         gamePower = 1
         for _, qs in draws.items():
@@ -57,7 +57,7 @@ def solve2(textFile):
 if __name__=="__main__":
     testInput = "../inputs/day2/test.txt"
     input = "../inputs/day2/input.txt"
-    
+
     assert solve1(testInput) == 8
     assert solve2(testInput) == 2286
     print(solve1(input))
